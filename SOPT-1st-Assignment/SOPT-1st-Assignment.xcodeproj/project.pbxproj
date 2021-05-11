@@ -17,6 +17,13 @@
 		CC405017262053B2006F9197 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC405016262053B2006F9197 /* SignUpViewController.swift */; };
 		CC40501A262053C1006F9197 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC405019262053C1006F9197 /* WelcomeViewController.swift */; };
 		CC40502126205709006F9197 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC40502026205709006F9197 /* CustomTextField.swift */; };
+		CC4CDDBB2645074600A2D7B8 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDBA2645074600A2D7B8 /* TabBar.storyboard */; };
+		CC4CDDBD264508EF00A2D7B8 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDBC264508EF00A2D7B8 /* HomeTab.storyboard */; };
+		CC4CDDBF264508FF00A2D7B8 /* ChatTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDBE264508FF00A2D7B8 /* ChatTab.storyboard */; };
+		CC4CDDC12645091000A2D7B8 /* HashTagTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDC02645091000A2D7B8 /* HashTagTab.storyboard */; };
+		CC4CDDC32645091F00A2D7B8 /* ShoppingTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDC22645091F00A2D7B8 /* ShoppingTab.storyboard */; };
+		CC4CDDC52645093200A2D7B8 /* OthersTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4CDDC42645093200A2D7B8 /* OthersTab.storyboard */; };
+		CCF1CB032645153B009746AB /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF1CB022645153B009746AB /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		CC405016262053B2006F9197 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CC405019262053C1006F9197 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CC40502026205709006F9197 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CC4CDDBA2645074600A2D7B8 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		CC4CDDBC264508EF00A2D7B8 /* HomeTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
+		CC4CDDBE264508FF00A2D7B8 /* ChatTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatTab.storyboard; sourceTree = "<group>"; };
+		CC4CDDC02645091000A2D7B8 /* HashTagTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HashTagTab.storyboard; sourceTree = "<group>"; };
+		CC4CDDC22645091F00A2D7B8 /* ShoppingTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingTab.storyboard; sourceTree = "<group>"; };
+		CC4CDDC42645093200A2D7B8 /* OthersTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OthersTab.storyboard; sourceTree = "<group>"; };
+		CCF1CB022645153B009746AB /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,13 @@
 				CC405016262053B2006F9197 /* SignUpViewController.swift */,
 				CC405019262053C1006F9197 /* WelcomeViewController.swift */,
 				CC40502026205709006F9197 /* CustomTextField.swift */,
+				CC4CDDBA2645074600A2D7B8 /* TabBar.storyboard */,
+				CC4CDDBC264508EF00A2D7B8 /* HomeTab.storyboard */,
+				CC4CDDBE264508FF00A2D7B8 /* ChatTab.storyboard */,
+				CC4CDDC02645091000A2D7B8 /* HashTagTab.storyboard */,
+				CC4CDDC22645091F00A2D7B8 /* ShoppingTab.storyboard */,
+				CC4CDDC42645093200A2D7B8 /* OthersTab.storyboard */,
+				CCF1CB022645153B009746AB /* TabBarViewController.swift */,
 			);
 			path = "SOPT-1st-Assignment";
 			sourceTree = "<group>";
@@ -136,7 +157,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC4CDDC12645091000A2D7B8 /* HashTagTab.storyboard in Resources */,
+				CC4CDDBF264508FF00A2D7B8 /* ChatTab.storyboard in Resources */,
+				CC4CDDBB2645074600A2D7B8 /* TabBar.storyboard in Resources */,
 				CC40500B2620537A006F9197 /* LaunchScreen.storyboard in Resources */,
+				CC4CDDC52645093200A2D7B8 /* OthersTab.storyboard in Resources */,
+				CC4CDDC32645091F00A2D7B8 /* ShoppingTab.storyboard in Resources */,
+				CC4CDDBD264508EF00A2D7B8 /* HomeTab.storyboard in Resources */,
 				CC4050082620537A006F9197 /* Assets.xcassets in Resources */,
 				CC40500626205378006F9197 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCF1CB032645153B009746AB /* TabBarViewController.swift in Sources */,
 				CC40502126205709006F9197 /* CustomTextField.swift in Sources */,
 				CC4050142620539E006F9197 /* SignInViewController.swift in Sources */,
 				CC40500326205378006F9197 /* ViewController.swift in Sources */,

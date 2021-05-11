@@ -25,18 +25,21 @@ class SignInViewController: UIViewController {
     
     @IBAction func goLogin(_ sender: UIButton) {
         
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let nextVC = storyboard.instantiateViewController(identifier: "TabBarViewController") as? TabBarViewController else {
+            return
+        }
         
+        print(emailTF!)
         if emailTF.hasText && passwordTF.hasText {
-            guard let nextVC: WelcomeViewController = self.storyboard?.instantiateViewController(identifier: "WelcomeViewController") else {
-                return
-            }
             
+            self.navigationController?.pushViewController(nextVC, animated: true)
+            print("HERE1")
+
+//            nextVC.modalPresentationStyle = .fullScreen
+//            nextVC.modalTransitionStyle = .coverVertical
+//            nextVC.message = emailTF.text
             
-            nextVC.modalPresentationStyle = .fullScreen
-            nextVC.modalTransitionStyle = .coverVertical
-            nextVC.message = emailTF.text
-            
-            self.present(nextVC, animated: true, completion: nil)
         }
         
         

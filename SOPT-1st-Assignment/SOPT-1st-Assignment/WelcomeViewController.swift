@@ -27,17 +27,16 @@ class WelcomeViewController: UIViewController {
 
     @IBAction func goBackToSignIn(_ sender: Any) {
         
-        self.dismiss(animated: true, completion: nil)
+        let vc1 = self.presentingViewController
         
-        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "SignInViewController") as? SignInViewController  else {
-            return
+            self.dismiss(animated: true) {
+            guard let mainVC = vc1 as? UINavigationController else {
+                return
+            }
+            
+            mainVC.popToRootViewController(animated: true)
+                
         }
-        
-        self.navigationController?
-            .pushViewController(nextVC, animated: false)
-        
-        
-        
       
     }
 }

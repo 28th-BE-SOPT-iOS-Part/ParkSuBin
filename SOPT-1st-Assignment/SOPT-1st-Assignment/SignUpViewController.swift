@@ -24,21 +24,22 @@ class SignUpViewController: UIViewController {
 
     @IBAction func goWelcome(_ sender: Any) {
         
+        let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+        guard let nextVC = storyboard.instantiateViewController(identifier: "TabBarViewController") as? TabBarViewController else { return }
+        
         print(emailTF.text!)
         print(passwordConfirmTF.text!)
         
         if emailTF.hasText && passwordTF.hasText && passwordTF.hasText {
             if passwordTF.text! == passwordConfirmTF.text! {
-                guard let nextVC:WelcomeViewController = self.storyboard?.instantiateViewController(identifier: "WelcomeViewController") else {
-                    return
-                }
-                
+                print("here")
+                self.navigationController?.pushViewController(nextVC, animated: true)
 
-                nextVC.modalPresentationStyle = .fullScreen
-                nextVC.modalTransitionStyle = .coverVertical
-                nextVC.message = emailTF.text
-                
-                self.present(nextVC, animated: true, completion: nil)
+//                nextVC.modalPresentationStyle = .fullScreen
+//                nextVC.modalTransitionStyle = .coverVertical
+//                nextVC.message = emailTF.text
+//
+//                self.present(nextVC, animated: true, completion: nil)
             }
         }
         
