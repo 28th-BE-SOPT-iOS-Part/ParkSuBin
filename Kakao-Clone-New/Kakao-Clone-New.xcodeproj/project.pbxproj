@@ -15,6 +15,13 @@
 		CC8E4D1C264A9D4A007D1995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC8E4D1A264A9D4A007D1995 /* LaunchScreen.storyboard */; };
 		CC8E4D24264ABD91007D1995 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D23264ABD91007D1995 /* SignUpViewController.swift */; };
 		CC8E4D26264AC7DA007D1995 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D25264AC7DA007D1995 /* WelcomeViewController.swift */; };
+		CC8E4D2C264ADAD3007D1995 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D2B264ADAD3007D1995 /* HomeTabBarViewController.swift */; };
+		CC8E4D2E264ADB02007D1995 /* FriendListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D2D264ADB02007D1995 /* FriendListsViewController.swift */; };
+		CC8E4D30264ADB0E007D1995 /* ChatRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D2F264ADB0E007D1995 /* ChatRoomsViewController.swift */; };
+		CC8E4D32264ADB1C007D1995 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D31264ADB1C007D1995 /* SearchViewController.swift */; };
+		CC8E4D34264ADB2A007D1995 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D33264ADB2A007D1995 /* ShoppingViewController.swift */; };
+		CC8E4D36264ADB3A007D1995 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */; };
+		CC8E4D38264AEE4E007D1995 /* FriendListsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		CC8E4D1D264A9D4A007D1995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC8E4D23264ABD91007D1995 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CC8E4D25264AC7DA007D1995 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		CC8E4D2B264ADAD3007D1995 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		CC8E4D2D264ADB02007D1995 /* FriendListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListsViewController.swift; sourceTree = "<group>"; };
+		CC8E4D2F264ADB0E007D1995 /* ChatRoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomsViewController.swift; sourceTree = "<group>"; };
+		CC8E4D31264ADB1C007D1995 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CC8E4D33264ADB2A007D1995 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
+		CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListsModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		CC8E4D0E264A9D47007D1995 /* Kakao-Clone-New */ = {
 			isa = PBXGroup;
 			children = (
+				CC8E4D28264AD92A007D1995 /* Tabs */,
 				CC8E4D27264ACEB4007D1995 /* SignIn */,
 				CC8E4D0F264A9D47007D1995 /* AppDelegate.swift */,
 				CC8E4D11264A9D47007D1995 /* SceneDelegate.swift */,
@@ -92,6 +107,20 @@
 				CC8E4D23264ABD91007D1995 /* SignUpViewController.swift */,
 			);
 			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CC8E4D28264AD92A007D1995 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				CC8E4D2B264ADAD3007D1995 /* HomeTabBarViewController.swift */,
+				CC8E4D2D264ADB02007D1995 /* FriendListsViewController.swift */,
+				CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */,
+				CC8E4D2F264ADB0E007D1995 /* ChatRoomsViewController.swift */,
+				CC8E4D31264ADB1C007D1995 /* SearchViewController.swift */,
+				CC8E4D33264ADB2A007D1995 /* ShoppingViewController.swift */,
+				CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */,
+			);
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		E57EEBAEE9C2426A8C14ACC6 /* Frameworks */ = {
@@ -217,9 +246,16 @@
 			files = (
 				CC8E4D14264A9D47007D1995 /* ViewController.swift in Sources */,
 				CC8E4D26264AC7DA007D1995 /* WelcomeViewController.swift in Sources */,
+				CC8E4D38264AEE4E007D1995 /* FriendListsModalViewController.swift in Sources */,
 				CC8E4D10264A9D47007D1995 /* AppDelegate.swift in Sources */,
+				CC8E4D32264ADB1C007D1995 /* SearchViewController.swift in Sources */,
+				CC8E4D34264ADB2A007D1995 /* ShoppingViewController.swift in Sources */,
+				CC8E4D2C264ADAD3007D1995 /* HomeTabBarViewController.swift in Sources */,
+				CC8E4D2E264ADB02007D1995 /* FriendListsViewController.swift in Sources */,
 				CC8E4D24264ABD91007D1995 /* SignUpViewController.swift in Sources */,
 				CC8E4D12264A9D47007D1995 /* SceneDelegate.swift in Sources */,
+				CC8E4D36264ADB3A007D1995 /* OthersViewController.swift in Sources */,
+				CC8E4D30264ADB0E007D1995 /* ChatRoomsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

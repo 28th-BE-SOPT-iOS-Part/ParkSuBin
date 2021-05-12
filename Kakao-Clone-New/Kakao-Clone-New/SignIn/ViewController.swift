@@ -103,10 +103,8 @@ class ViewController: UIViewController {
     
     @objc func signInButtonTapped(_ sender: UIButton) {
         if emailOrPhoneTextField.hasText && passwordTextField.hasText {
-            let welcomeViewController: WelcomeViewController = WelcomeViewController()
-            welcomeViewController.message = emailOrPhoneTextField.text!
-            welcomeViewController.modalPresentationStyle = .fullScreen
-            self.present(welcomeViewController, animated: true)
+            let homeTabBarViewController: HomeTabBarViewController = HomeTabBarViewController()
+            self.navigationController?.pushViewController(homeTabBarViewController, animated: true)
         }
     }
     
@@ -161,7 +159,7 @@ class ViewController: UIViewController {
         
         self.buttonStackView.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.bottom.equalToSuperview().inset(320)
+            $0.bottom.equalToSuperview().inset(260)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().inset(20)
         }
