@@ -11,7 +11,17 @@ import Then
 
 class FriendListsViewController: UIViewController {
     
-    
+    // table view
+//    let friendListTableView = UITableView().then {
+//        $0.snp.makeConstraints {
+//            $0.top.equalToSuperview()
+//            $0.bottom.equalToSuperview()
+//            $0.leading.equalToSuperview()
+//            $0.trailing.equalToSuperview()
+//        }
+//    }
+//
+//
     let titleLabel = UILabel().then {
         $0.text = "친구"
         $0.font = .systemFont(ofSize: 28, weight: .semibold)

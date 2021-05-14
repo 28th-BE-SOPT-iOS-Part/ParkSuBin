@@ -90,10 +90,37 @@ class SignUpViewController: UIViewController {
         if self.emailOrPhoneTextField.hasText &&
             self.passwordTextField.text == self.passwordTextConfirmTextField.text &&
             self.passwordTextField.hasText {
-            let welcomeViewController: WelcomeViewController = WelcomeViewController()
-            welcomeViewController.message = emailOrPhoneTextField.text!
-            welcomeViewController.modalPresentationStyle = .fullScreen
-            self.present(welcomeViewController, animated: true)
+            
+            SignUpDataService.shared.signUp(email: emailOrPhoneTextField.text!, password: passwordTextField.text!) { result in
+                
+                switch result {
+                case .success(let message):
+                    
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message, okAction: {_ in
+                            let homeTabBarViewController: HomeTabBarViewController = HomeTabBarViewController()
+                            self.navigationController?.pushViewController(homeTabBarViewController, animated: true)
+                        })
+                    }
+                    
+                case .requestErr(let message):
+                    
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message)
+                    }
+                    
+                default: print("ERROR")
+                
+                }
+                
+            }
+            
+            
+            
+//            let welcomeViewController: WelcomeViewController = WelcomeViewController()
+//            welcomeViewController.message = emailOrPhoneTextField.text!
+//            welcomeViewController.modalPresentationStyle = .fullScreen
+//            self.present(welcomeViewController, animated: true)
         }
 
         

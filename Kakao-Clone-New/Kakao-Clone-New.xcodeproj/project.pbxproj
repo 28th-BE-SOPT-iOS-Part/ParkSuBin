@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		624CC6CD5CE6B8234F913461 /* Pods_Kakao_Clone_New.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C0C12C875EB8D599BA9ADA /* Pods_Kakao_Clone_New.framework */; };
+		CC3E8F09264B764500C7A916 /* FriendListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3E8F08264B764500C7A916 /* FriendListsTableViewCell.swift */; };
 		CC8E4D10264A9D47007D1995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D0F264A9D47007D1995 /* AppDelegate.swift */; };
 		CC8E4D12264A9D47007D1995 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D11264A9D47007D1995 /* SceneDelegate.swift */; };
 		CC8E4D14264A9D47007D1995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D13264A9D47007D1995 /* ViewController.swift */; };
@@ -22,12 +23,20 @@
 		CC8E4D34264ADB2A007D1995 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D33264ADB2A007D1995 /* ShoppingViewController.swift */; };
 		CC8E4D36264ADB3A007D1995 /* OthersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */; };
 		CC8E4D38264AEE4E007D1995 /* FriendListsModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */; };
+		CC8EEF59264E42170039EA79 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF58264E42170039EA79 /* NetworkResult.swift */; };
+		CC8EEF5C264E43690039EA79 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF5B264E43690039EA79 /* APIConstants.swift */; };
+		CC8EEF5E264E43EA0039EA79 /* SignInDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF5D264E43EA0039EA79 /* SignInDataModel.swift */; };
+		CC8EEF63264E45DE0039EA79 /* SignInDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF62264E45DE0039EA79 /* SignInDataService.swift */; };
+		CC8EEF66264E4D890039EA79 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF65264E4D890039EA79 /* SignUpDataModel.swift */; };
+		CC8EEF69264E4E6B0039EA79 /* SignUpDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF68264E4E6B0039EA79 /* SignUpDataService.swift */; };
+		CC8EEF6B264E55D90039EA79 /* UIViewController + makeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8EEF6A264E55D90039EA79 /* UIViewController + makeAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23C0C12C875EB8D599BA9ADA /* Pods_Kakao_Clone_New.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kakao_Clone_New.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C06E776927A88B466635FCA /* Pods-Kakao-Clone-New.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakao-Clone-New.release.xcconfig"; path = "Target Support Files/Pods-Kakao-Clone-New/Pods-Kakao-Clone-New.release.xcconfig"; sourceTree = "<group>"; };
 		ABC6298F99DEF6294D667B9C /* Pods-Kakao-Clone-New.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakao-Clone-New.debug.xcconfig"; path = "Target Support Files/Pods-Kakao-Clone-New/Pods-Kakao-Clone-New.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3E8F08264B764500C7A916 /* FriendListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListsTableViewCell.swift; sourceTree = "<group>"; };
 		CC8E4D0C264A9D47007D1995 /* Kakao-Clone-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kakao-Clone-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8E4D0F264A9D47007D1995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC8E4D11264A9D47007D1995 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +53,13 @@
 		CC8E4D33264ADB2A007D1995 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersViewController.swift; sourceTree = "<group>"; };
 		CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListsModalViewController.swift; sourceTree = "<group>"; };
+		CC8EEF58264E42170039EA79 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		CC8EEF5B264E43690039EA79 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		CC8EEF5D264E43EA0039EA79 /* SignInDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataModel.swift; sourceTree = "<group>"; };
+		CC8EEF62264E45DE0039EA79 /* SignInDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataService.swift; sourceTree = "<group>"; };
+		CC8EEF65264E4D890039EA79 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
+		CC8EEF68264E4E6B0039EA79 /* SignUpDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataService.swift; sourceTree = "<group>"; };
+		CC8EEF6A264E55D90039EA79 /* UIViewController + makeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + makeAlert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 		CC8E4D0E264A9D47007D1995 /* Kakao-Clone-New */ = {
 			isa = PBXGroup;
 			children = (
+				CC8EEF57264E42020039EA79 /* Networking */,
 				CC8E4D28264AD92A007D1995 /* Tabs */,
 				CC8E4D27264ACEB4007D1995 /* SignIn */,
 				CC8E4D0F264A9D47007D1995 /* AppDelegate.swift */,
@@ -114,6 +131,7 @@
 			children = (
 				CC8E4D2B264ADAD3007D1995 /* HomeTabBarViewController.swift */,
 				CC8E4D2D264ADB02007D1995 /* FriendListsViewController.swift */,
+				CC3E8F08264B764500C7A916 /* FriendListsTableViewCell.swift */,
 				CC8E4D37264AEE4E007D1995 /* FriendListsModalViewController.swift */,
 				CC8E4D2F264ADB0E007D1995 /* ChatRoomsViewController.swift */,
 				CC8E4D31264ADB1C007D1995 /* SearchViewController.swift */,
@@ -121,6 +139,36 @@
 				CC8E4D35264ADB3A007D1995 /* OthersViewController.swift */,
 			);
 			path = Tabs;
+			sourceTree = "<group>";
+		};
+		CC8EEF57264E42020039EA79 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CC8EEF67264E4E5A0039EA79 /* Service */,
+				CC8EEF64264E4D460039EA79 /* DataModel */,
+				CC8EEF58264E42170039EA79 /* NetworkResult.swift */,
+				CC8EEF5B264E43690039EA79 /* APIConstants.swift */,
+				CC8EEF6A264E55D90039EA79 /* UIViewController + makeAlert.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CC8EEF64264E4D460039EA79 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CC8EEF5D264E43EA0039EA79 /* SignInDataModel.swift */,
+				CC8EEF65264E4D890039EA79 /* SignUpDataModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		CC8EEF67264E4E5A0039EA79 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC8EEF62264E45DE0039EA79 /* SignInDataService.swift */,
+				CC8EEF68264E4E6B0039EA79 /* SignUpDataService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E57EEBAEE9C2426A8C14ACC6 /* Frameworks */ = {
@@ -245,17 +293,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8E4D14264A9D47007D1995 /* ViewController.swift in Sources */,
+				CC8EEF5E264E43EA0039EA79 /* SignInDataModel.swift in Sources */,
 				CC8E4D26264AC7DA007D1995 /* WelcomeViewController.swift in Sources */,
 				CC8E4D38264AEE4E007D1995 /* FriendListsModalViewController.swift in Sources */,
 				CC8E4D10264A9D47007D1995 /* AppDelegate.swift in Sources */,
+				CC3E8F09264B764500C7A916 /* FriendListsTableViewCell.swift in Sources */,
 				CC8E4D32264ADB1C007D1995 /* SearchViewController.swift in Sources */,
 				CC8E4D34264ADB2A007D1995 /* ShoppingViewController.swift in Sources */,
+				CC8EEF63264E45DE0039EA79 /* SignInDataService.swift in Sources */,
 				CC8E4D2C264ADAD3007D1995 /* HomeTabBarViewController.swift in Sources */,
 				CC8E4D2E264ADB02007D1995 /* FriendListsViewController.swift in Sources */,
 				CC8E4D24264ABD91007D1995 /* SignUpViewController.swift in Sources */,
 				CC8E4D12264A9D47007D1995 /* SceneDelegate.swift in Sources */,
+				CC8EEF6B264E55D90039EA79 /* UIViewController + makeAlert.swift in Sources */,
+				CC8EEF5C264E43690039EA79 /* APIConstants.swift in Sources */,
 				CC8E4D36264ADB3A007D1995 /* OthersViewController.swift in Sources */,
 				CC8E4D30264ADB0E007D1995 /* ChatRoomsViewController.swift in Sources */,
+				CC8EEF66264E4D890039EA79 /* SignUpDataModel.swift in Sources */,
+				CC8EEF59264E42170039EA79 /* NetworkResult.swift in Sources */,
+				CC8EEF69264E4E6B0039EA79 /* SignUpDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

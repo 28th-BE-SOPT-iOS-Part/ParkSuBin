@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
+
 class ViewController: UIViewController {
     
     
@@ -103,8 +104,32 @@ class ViewController: UIViewController {
     
     @objc func signInButtonTapped(_ sender: UIButton) {
         if emailOrPhoneTextField.hasText && passwordTextField.hasText {
-            let homeTabBarViewController: HomeTabBarViewController = HomeTabBarViewController()
-            self.navigationController?.pushViewController(homeTabBarViewController, animated: true)
+            
+            SignInDataService.shared.signIn(email: emailOrPhoneTextField.text!, password: passwordTextField.text!) { result in
+                
+                switch result {
+                case .success(let message, let token):
+                    if let message = message as? String, let token = token! as? String {
+                        self.makeAlert(title: "알림", message: message, okAction: {_ in
+                            UserDefaults.standard.set(token, forKey: "token")
+                            let homeTabBarViewController: HomeTabBarViewController = HomeTabBarViewController()
+                            self.navigationController?.pushViewController(homeTabBarViewController, animated: true)
+                        })
+                        print("token_result \(String(describing: UserDefaults.standard.string(forKey: "token")))")
+                    }
+                    
+                case .requestErr(let message):
+                    
+                    if let message = message as? String {
+                        self.makeAlert(title: "알림", message: message)
+                    }
+                    
+                default: print("ERROR")
+                
+                }
+                
+            }
+
         }
     }
     
