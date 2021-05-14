@@ -94,7 +94,7 @@ class SignUpViewController: UIViewController {
             SignUpDataService.shared.signUp(email: emailOrPhoneTextField.text!, password: passwordTextField.text!) { result in
                 
                 switch result {
-                case .success(let message):
+                case .success(let message, _):
                     
                     if let message = message as? String {
                         self.makeAlert(title: "알림", message: message, okAction: {_ in
